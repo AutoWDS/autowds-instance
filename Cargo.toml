@@ -1,0 +1,15 @@
+[package]
+name = "autowds-instance"
+version = "0.1.0"
+edition = "2024"
+publish = ["crates-io"]
+
+[dependencies]
+chromiumoxide = { git = "https://github.com/mattsse/chromiumoxide", features = [
+    "tokio-runtime",
+], default-features = false, branch = "main" }
+tokio = "1"
+anyhow = "1"
+futures-util = "0.3"
+tracing = "0.1"
+tracing-subscriber = "0.3"
