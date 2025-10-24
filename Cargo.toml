@@ -8,6 +8,7 @@ publish = ["crates-io"]
 chromiumoxide = { git = "https://github.com/mattsse/chromiumoxide", features = [
     "tokio-runtime",
 ], default-features = false, branch = "main" }
+headless_chrome = "1"
 tokio = "1"
 anyhow = "1"
 futures-util = "0.3"
