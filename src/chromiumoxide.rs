@@ -6,7 +6,7 @@ use tokio::time::{sleep, timeout};
 
 pub async fn browse_wikipedia() -> Result<()> {
     loop {
-        match Browser::connect("ws://127.0.0.1:9222/").await {
+        match Browser::connect("ws://0.0.0.0:9222/").await {
             Ok((browser, mut handler)) => {
                 tracing::info!("✅ Connected to Lightpanda");
 
